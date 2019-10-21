@@ -109,3 +109,17 @@ nav a::before{
 nav a:hover::before{
   width: 100%;
 }*/
+
+.pakketilbud{
+  width: 40%;
+  display: flex;
+  align-self: flex-start;
+}
+
+.contentpakke{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  order:
+}
