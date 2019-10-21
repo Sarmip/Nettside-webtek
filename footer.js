@@ -8,4 +8,5 @@ function bunntekst() {
     }
 }
 
+var i = 20;
 bunntekst();
