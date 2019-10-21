@@ -1,0 +1,125 @@
+
+body{
+font-family: 'Armata', sans-serif;
+font-size: 1em;
+margin: 0;
+padding: 0;
+
+  }
+
+#front {
+  width: 100%;
+
+}
+#p1{
+  float: left;
+  width: 45%;
+}
+#p2{
+  float: right;
+  width: 45%;
+}
+#tekst{
+  font-size: 16px;
+  line-height: 1.5;
+  width: 95%;
+  margin: 2% auto 5%;
+  margin-bottom: 10%;
+}
+
+header{
+background: #EEEE;
+width:100%;
+margin: 0 auto;
+font-size:18pt;
+}
+
+/*header::after{
+  content: '';
+  display: table;
+  clear: both;
+} */
+
+#logo{
+  float: left;
+  position: absolute;
+  margin-left: 20px;
+}
+
+nav{
+  height: 80px;
+}
+
+nav ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-left: 80px;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+
+  position: relative;
+}
+
+
+#logo{
+  width: 200px;
+  float: left;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav li:hover {
+  border-bottom: solid 3px #444;
+
+}
+
+/*a:visited {
+  font-weight: bold;
+}*/
+
+/*nav:hover{
+  color: #000;
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}*/
+
+.pakketilbud{
+  width: 40%;
+  display: flex;
+  align-self: flex-start;
+}
+
+.contentpakke{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  order:
+}
