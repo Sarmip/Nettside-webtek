@@ -111,6 +111,27 @@ nav a:hover::before{
   width: 100%;
 }*/
 
+/* FOOTER */
+footer{
+  background-color: #E6E6E6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*border-top: 1px solid #030303;*/
+  padding-top: 30px;
+}
+#logofooter{
+  order:1;
+  width: 150px;
+  position: relative;
+  top: -90px;
+}
+#adresse{
+  order: 2;
+}
+
+/*PAKKETILBUD*/
+
 .pakketilbud{
  display: flex;
  flex-direction: row;
@@ -119,7 +140,7 @@ nav a:hover::before{
 }
 
 .imgpakketilbud{
-  width: 40%;
+  width: 500px;
   padding: 30px;
 }
 
@@ -147,25 +168,43 @@ nav a:hover::before{
   font-size: 15px;
   transition: padding 0.3s ease-out;
 }
+
 .bestill:hover{
   padding: 1.2em;
 }
 
-/* FOOTER */
-footer{
-  background-color: #E6E6E6;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  /*border-top: 1px solid #030303;*/
-  padding-top: 30px;
-}
-#logofooter{
-  order:1;
-  width: 150px;
-  position: relative;
-  top: -90px;
-}
-#adresse{
-  order: 2;
+@media only screen and (max-width: 900px) {
+
+  /*FOOTER*/
+
+  footer{
+    margin-top: 150px;
+  }
+
+  /*PAKKETILBUD*/
+
+  .pakketilbud{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 50px 0px 60px 0px;
+
+  }
+
+  .imgpakketilbud{
+    width: 100%;
+    padding: 0px;
+  }
+
+  .headerpakke{
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .bestill{
+    transition: none;
+  }
+  .bestill:hover{
+    padding: 1em;
+  }
+
 }
