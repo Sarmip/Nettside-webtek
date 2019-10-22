@@ -4,6 +4,7 @@ font-family: 'Armata', sans-serif;
 font-size: 1em;
 margin: 0;
 padding: 0;
+background-color:#F5F5F5;
 
   }
 
@@ -111,15 +112,60 @@ nav a:hover::before{
 }*/
 
 .pakketilbud{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ margin: 100px;
+}
+
+.imgpakketilbud{
   width: 40%;
-  display: flex;
-  align-self: flex-start;
+  padding: 30px;
 }
 
 .contentpakke{
+  padding: 40px;
+  margin: 30px;
+}
+
+.headerpakke{
+  font-size: 50px;
+  padding-bottom: 40px;
+  padding-top: 60px;
+}
+
+.bestill{
+  letter-spacing: 2px;
+  padding: 1em;
+  border:1px;
+  background:#030303;
+  color: #F5F5F5;
+  padding:1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 15px;
+  transition: padding 0.3s ease-out;
+}
+.bestill:hover{
+  padding: 1.2em;
+}
+
+/* FOOTER */
+footer{
+  background-color: #E6E6E6;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  order:
+  flex-direction: row;
+  justify-content: space-around;
+  /*border-top: 1px solid #030303;*/
+  padding-top: 30px;
+}
+#logofooter{
+  order:1;
+  width: 150px;
+  position: relative;
+  top: -90px;
+}
+#adresse{
+  order: 2;
 }

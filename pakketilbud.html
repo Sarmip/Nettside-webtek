@@ -2,14 +2,14 @@
 <html lang="no" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Baristakurs</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pakketilbud - Bartebyen</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <section>
-      <div class="contentpakke">
-      <img class="pakketilbud" src="img/baristakurs2.jpg" alt="Baristakurs">
-        <h2>Baristakurs</h2>
+    <section class="pakketilbud">
+      <img class="imgpakketilbud" src="img/baristakurs2.jpg" alt="Baristakurs">
+        <div class="contentpakke">
+        <h2 class="headerpakke">Baristakurs</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -18,24 +18,26 @@
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
           cupidatat non proident, sunt in culpa qui
           officia deserunt mollit anim id est laborum.</p>
-        </div>
+        <input class="bestill" type="button" name="bestill" value="Bestill">
     </section>
-    <section>
-      <img class="pakketilbud" src="img/byvandring.jpg" alt="Byvandring">
-      <h2>Byvandring</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-    <section>
-      <img class="pakketilbud" src="img/fotosafari.jpg" alt="Fotosafari">
+    <section class="pakketilbud">
+      <img class="imgpakketilbud" src="img/byvandring.jpg" alt="Byvandring">
       <div class="contentpakke">
-        <h2>Fotosafari</h2>
+        <h2 class="headerpakke">Byvandring</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum.</p>
+        <input class="bestill" type="button" name="bestill" value="Bestill">
+    </section>
+    <section class="pakketilbud">
+      <img class="imgpakketilbud" src="img/fotosafari.jpg" alt="Fotosafari">
+      <div class="contentpakke">
+        <h2 class="headerpakke">Fotosafari</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -44,12 +46,13 @@
            cillum dolore eu fugiat nulla pariatur. Excepteur sint
            occaecat cupidatat non proident, sunt in culpa qui officia
            deserunt mollit anim id est laborum.</p>
+          <input class="bestill" type="button" name="bestill" value="Bestill">
       </div>
     </section>
-    <section>
-      <img class="pakketilbud" src="img/hyttetur.jpg" alt="Hyttetur">
+    <section class="pakketilbud">
+      <img class="imgpakketilbud" src="img/hyttetur.jpg" alt="Hyttetur">
       <div class="contentpakke">
-        <h2>Hyttetur</h2>
+        <h2 class="headerpakke">Hyttetur</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -58,12 +61,13 @@
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
           cupidatat non proident, sunt in culpa qui officia
           deserunt mollit anim id est laborum.</p>
+        <input class="bestill" type="button" name="bestill" value="Bestill">
       </div>
     </section>
-    <section>
-      <img class="pakketilbud" src="img/nidarosdomen.jpg" alt="Nidarosdomen">
+    <section class="pakketilbud">
+      <img class="imgpakketilbud" src="img/nidarosdomen.jpg" alt="Nidarosdomen">
       <div class="contentpakke">
-        <h2>Nidarosdomen</h2>
+        <h2 class="headerpakke">Nidarosdomen</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -72,14 +76,22 @@
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
           cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.</p>
+        <input class="bestill" type="button" name="bestill" value="Bestill">
       </div>
     </section>
     <footer>
-      <div id=logofooter>
-        <img src="img/logo.gif" alt="logo">
-
-      </div>
-
+        <img id="logofooter" src="img/logo.gif" alt="logo">
+      <p id="kontakt">
+        Kontakt: <br>
+        +47 123 45 678 <br>
+        kontakt@bartebyen.no
+      </p>
+      <p id="adresse">
+        Adresse: <br>
+        Bartebyen AS <br>
+        Bartebyen 1 <br>
+        7013 Trondheim
+      </p>
     </footer>
   </body>
 </html>
