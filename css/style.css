@@ -175,29 +175,62 @@ footer{
 
 /* TIPS */
 
-#tips_body{
-  margin: 20px 20px 20px 20px;
-  line-height: 1.5em;
+
+#tips_innledning{
+  margin: 100px;
 
 }
 
-.tekstboks {
-  width: 60%;
-  display: block;
+h1{
+  font-size: 50px;
+}
 
+#tips_info{
+  width: 550px;
+
+}
+
+#tips_valg{
+  margin-top: 40px;
+  width: 550px;
+}
+
+.tips_innhold{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 100px;
+  display: none;
+
+}
+
+.tekstboks{
+  padding: 40px;
+  margin: 30px;
+  width: 500px;
+  display: none;
+
+}
+
+h2{
+  font-size: 50px;
+  padding-bottom: 40px;
+  padding-top: 60px;
+  display: none;
 }
 
 .tips_bilde{
-  display: inline;
-  margin-left: 70%;
+  width: 400px;
+  height: 550px;
+  position: relative;
+  display: none;
 
 }
 
-
-
 /* KONTAKT / OM OSS*/
 #kontaktside{
-  
+
 }
 
 #kontor{
