@@ -197,7 +197,6 @@ h1{
 
 .tips_innhold{
   display: flex;
-  position: relative;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 100px;/*
@@ -213,7 +212,7 @@ h1{
 
 }
 
-h2{
+.tips_overskrift{
   font-size: 50px;
   padding-bottom: 40px;
   padding-top: 60px;
@@ -283,5 +282,4 @@ h2{
   .bestill:hover{
     padding: 1em;
   }
-
 }
