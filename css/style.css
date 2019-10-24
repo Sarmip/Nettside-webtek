@@ -200,11 +200,10 @@ h1{
 
 .tips_innhold{
   display: flex;
-  position: relative;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 100px;
-  display: none;
+  margin: 100px;/*
+  display: none;*/
 
 }
 
@@ -212,22 +211,22 @@ h1{
   padding: 40px;
   margin: 30px;
   width: 500px;
-  display: none;
+/*  display: none;*/
 
 }
 
-h2{
+.tips_overskrift{
   font-size: 50px;
   padding-bottom: 40px;
   padding-top: 60px;
-  display: none;
+/*  display: none;*/
 }
 
 .tips_bilde{
   width: 400px;
   height: 550px;
   position: relative;
-  display: none;
+/*  display: none; */
 
 }
 .innhold{
@@ -270,6 +269,9 @@ h2{
   .bestill:hover{
     padding: 1em;
   }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1df4e29680aa8ddf77f6835627d41148ed232c32
 }
