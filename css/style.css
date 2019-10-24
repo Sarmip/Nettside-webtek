@@ -229,12 +229,23 @@ h2{
 }
 
 /* KONTAKT / OM OSS*/
+<<<<<<< HEAD
+#contentkontakt{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1em;
+=======
 #kontaktside{
 
+>>>>>>> 8d1cb77fd7085d68fcda8e19057829dbf2a9454f
+}
+
+.innhold{
+  grid-column: 1/2;
 }
 
 #kontor{
-
+  grid-column: : 2/3
 }
 
 
