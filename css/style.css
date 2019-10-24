@@ -230,7 +230,13 @@ h2{
   display: none;
 
 }
+.innhold{
+  grid-column: 1/2;
+}
 
+
+
+>>>>>>> b1b63f7c294c7c88da02757d658716e65489cf70
 
 
 @media only screen and (max-width: 900px) {
@@ -267,9 +273,5 @@ h2{
     padding: 1em;
   }
 
-/*Kontakt*/
-  #kontor_bilde{
-    width: 50px;
-    height: 20px;
-}
+
 }
