@@ -269,9 +269,9 @@ h1{
   .bestill:hover{
     padding: 1em;
   }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 1df4e29680aa8ddf77f6835627d41148ed232c32
+  #kontor{
+    width: 20px;
+    height: 5px;
+  }
 }
