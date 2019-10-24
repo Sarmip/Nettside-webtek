@@ -196,12 +196,18 @@ footer{
 
 
 /* KONTAKT / OM OSS*/
-#kontaktside{
-  
+#contentkontakt{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1em;
+}
+
+.innhold{
+  grid-column: 1/2;
 }
 
 #kontor{
-
+  grid-column: : 2/3
 }
 
 
