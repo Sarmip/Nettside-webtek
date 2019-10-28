@@ -1,0 +1,13 @@
+css:
+Endret farge på body fra hvit til lys grå
+Skal endre farge på navbar
+
+Endret farge på footer til grå samt fjerna border-top.
+
+la til css i egen mappe
+
+
+Pakketilbud:
+
+- endret størrelse på bildene til bredde på 500px.
+Mobilsiden forblir den samme.

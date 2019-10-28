@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bestilling - Bartebyen</title>
+        <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Bestilling</h1>
+        <p>Usikker på hvilken pakketilbud du skal velge? Les mer om dem <a href="../pakketilbud.html"><strong>HER.</strong></a></p>
+        <form>
+            <label>Velg pakketilbud:</label>
+            <select>
+                <option value="" disabled selected>Se alle</option>
+                <option value="pakketilbud1">Baristakurs</option>
+                <option value="pakketilbud2">Byvandring</option>
+                <option value="pakketilbud3">Fotosafari</option>
+                <option value="pakketilbud4">Hyttetur</option>
+                <option value="pakketilbud5">Nidarosdomen</option>
+            </select><br>
+            <label for="dato">Dato:</label>
+            <input type="date" name="dato" id="dato" required><br>
+            <label for="deltakere">Antall deltakere:</label>
+            <input type="number" name="deltakere" id="deltakere" min="1" required><br>
+            <label for="navn">Navn:</label>
+            <input type="text" name="navn" id="navn" pattern="[A-Za-z]" required><br>
+            <label for="epost">E-post:</label>
+            <input type="email" name="epost" id="epost" required><br>
+            <label for="telefonnr">Telefonnummer:</label>
+            <input type="text" name="telefonnr" id="telefonnr" pattern="[0-9]" required><br>
+            <label>Andre kommentarer:</label>
+            <textarea placeholder="Allergier o.l."></textarea><br>
+            <input type="submit" value="Bekreft bestilling">
+            <div id="bekreftelse"> <!-- Må fikse med CSS --->
+                <h3>Takk for din bestilling!</h3>
+                <p>Du vil snart få en mail fra oss. Ha en fin dag videre!</p>
+            </div>
+        </form>
+    </body>
+</html>
