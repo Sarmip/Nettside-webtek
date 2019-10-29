@@ -1,0 +1,42 @@
+* {box-sizing:border-box}
+
+/* container til slideshow*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* gjemmer bildene til defualt */
+.mySlides {
+  display: none;
+}
+
+/* teksten til bilde */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+/* fading */
+.fade {
+  /* -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s; */
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
