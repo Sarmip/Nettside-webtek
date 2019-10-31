@@ -51,6 +51,33 @@ body{
   padding: 1em;
 }
 
+/*KONTAKT*/
+h2{
+  font-size: 3em;
+  font-weight: 800;
+}
+#contentkontakt{
+  display: inline-block;
+  padding: 10%;
+}
+
+#kontaktomoss{
+  padding:10%;
+  padding-bottom: 20px;
+}
+
+#wrapper{
+
+}
+
+#kontor{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+}
+
 footer{
   background-color: #E6E6E6;
   display: flex;
@@ -69,16 +96,19 @@ footer{
   order: 2;
 }
 
+
 @media only screen and (min-width: 650px) {
   .imgpakketilbud{
     width: 100%;
     height: 700px;
+  }
 }
 
 
 
 @media only screen and (min-width: 900px) {
 
+/*PAKKETILBUD*/
   .pakketilbud{
    display: flex;
    flex-direction: row;
@@ -104,20 +134,30 @@ footer{
   }
 
   .bestill{
-    letter-spacing: 2px;
-    padding: 1em;
-    border:1px;
-    background:#030303;
-    color: #F5F5F5;
-    padding:1em;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 30px;
-    font-size: 15px;
     transition: padding 0.3s ease-out;
   }
 
   .bestill:hover{
     padding: 1.2em;
   }
+
+  /*OM OSS*/
+
+  #contentkontakt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10%;
+  }
+
+  #bildediv{
+    margin: auto;
+    overflow: hidden;
+
+  }
+  #kontor{
+    margin-top: 10%;
+    height: 500px;
+    object-fit: cover;
+  }
+
 }
