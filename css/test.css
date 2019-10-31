@@ -96,6 +96,92 @@ footer{
   order: 2;
 }
 
+/*BESTILLING*/
+
+#bestill_body{
+  padding: 10%;
+}
+
+.select_bestill{
+  position: relative;
+}
+
+.select_bestill select{
+  background: white;
+  padding: 10px;
+  width: 250px;
+  border: #2D2D2D 1px solid;
+  font-size: 1em;
+  font-family: 'Armata', sans-serif;
+  outline: none;
+
+}
+
+.select_bestill:before{
+  content: '\f078';
+  font-family: "FontAwesome";
+  font-size: 23px;
+  color:#aaa;
+  position: absolute;
+  left: 195px;
+  top: 12px;
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+#bestill_skjema{
+
+}
+
+#pakketilbud{
+
+}
+
+.boks{
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+
+#alle_input{
+  display: flex;
+  flex-direction: column;
+}
+
+.bestill_input{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background: white;
+  border:none
+  /*#2D2D2D 1px solid;*/
+  font-size: 1em;
+  font-family: 'Armata', sans-serif;
+
+
+}
+
+#dato{
+  width:50%;
+  padding: 0;
+  background: white;
+}
+
+
+#deltakere, #pris{
+  width: 50%;
+  height: 20px;
+}
+
+.bestill_input textarea{
+
+}
+
+#bekreftelse { visibility: hidden; }
+
 
 @media only screen and (min-width: 650px) {
   .imgpakketilbud{
