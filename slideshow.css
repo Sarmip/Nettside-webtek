@@ -7,9 +7,11 @@
   margin: auto;
 }
 
-/* gjemmer bildene til defualt */
+
 .mySlides {
-  display: none;
+  display: none; /* gjemmer bildene til defualt */
+  animation-name: fade;
+  animation-duration: 2s;
 }
 
 /* teksten til bilde */
@@ -23,13 +25,6 @@
   text-align: left;
 }
 
-/* fading */
-.fade {
-  /* -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s; */
-  animation-name: fade;
-  animation-duration: 2s;
-}
 
 @-webkit-keyframes fade {
   from {opacity: .4}
