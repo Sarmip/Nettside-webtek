@@ -29,6 +29,7 @@ let myObj = [
 for (let x of myObj){
   console.log(x)
   let wrapper = document.createElement("div")
+  wrapper.setAttribute("class", "pakketilbud")
   let img = document.createElement("img")
   img.setAttribute("class","imgpakketilbud")
   img.setAttribute("src",x.bildet[0])
