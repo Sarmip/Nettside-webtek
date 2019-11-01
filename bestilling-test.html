@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bestilling - Bartebyen</title>
+        <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet">
+        <!-- FIKS: Må inn i CSS -->
+        <style> 
+            #bekreftelse { visibility: hidden; }
+        </style>
+    </head>
+    <body>
+        <h1>Bestilling</h1>
+        <p>Usikker på hvilken pakketilbud du skal velge? Les mer om dem <a href="../pakketilbud.html"><strong>HER.</strong></a></p>
+        <form onsubmit="return bekreftelse()">
+            <label for="pakketilbud">Velg pakketilbud:</label>
+            <select id="pakketilbud" required onchange="visPris()">
+                <option value="">Se alle</option>
+                <option id="pakketilbud1" value=670>Baristakurs</option>
+                <option id="pakketilbud2" value=750>Byvandring</option>
+                <option id="pakketilbud3" value=400>Fotosafari</option>
+                <option id="pakketilbud4" value=2300>Hyttetur</option>
+                <option id="pakketilbud5" value=300>Nidarosdomen</option>
+            </select><br>
+            <label for="dato">Dato:</label>
+            <input type="date" name="dato" id="dato" required><br> <!-- FIKS: Legge til min-dato? -->
+            <label for="deltakere">Antall deltakere:</label>
+            <input type="number" name="deltakere" id="deltakere" min="1" value="1" onchange="visPris()" required><br>
+            <label for="pris">Pris:</label> <!-- OBS: Var ikke med i P2; må inkludere i P3 -->
+            <input type="text" id="pris" name="pris" disabled><br> <!-- FIKS: Kanskje output istedenfor? -->
+            <label for="navn">Navn:</label>
+            <input type="text" name="navn" id="navn" pattern="^[A-Za-zæøåÆØÅ\s-]*$" required><br>
+            <label for="epost">E-post:</label>
+            <input type="email" name="epost" id="epost" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onkeyup="visMail()" required><br>
+            <label for="telefonnr">Telefonnummer:</label>
+            <input type="text" name="telefonnr" id="telefonnr" pattern="^[0-9]*$" required><br>
+            <label for="kommentar">Andre kommentarer:</label>
+            <textarea placeholder="Allergier o.l."></textarea><br>
+            <input type="submit" value="Bekreft bestilling">
+            <div id="bekreftelse"> <!-- FIKS: Burde se penere ut med CSS --->
+                <h3>Takk for din bestilling!</h3>
+                <p>Du vil snart få en mail <span id="brukermail">fra oss</span>. Ha en fin dag videre!</p>
+            </div>
+        </form>
+        <script src="bestilling.js"></script>
+    </body>
+</html>
