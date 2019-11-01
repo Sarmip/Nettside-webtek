@@ -1,0 +1,163 @@
+body{
+  font-family: 'Armata', sans-serif;
+  font-size: 1em;
+  background-color:#F5F5F5;
+  margin: 0;
+}
+
+  /*PAKKETILBUD*/
+.alt{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+.pakketilbud{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.contentpakke{
+  padding: 60px;
+}
+
+.imgpakketilbud{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.headerpakke{
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.bestill{
+  letter-spacing: 2px;
+  padding: 1em;
+  border:1px;
+  background:#030303;
+  color: #F5F5F5;
+  padding:1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  float: right;
+}
+.bestill:hover{
+  padding: 1em;
+}
+
+/*KONTAKT*/
+h2{
+  font-size: 3em;
+  font-weight: 800;
+}
+#contentkontakt{
+  display: inline-block;
+  padding: 10%;
+}
+
+#kontaktomoss{
+  padding:10%;
+  padding-bottom: 20px;
+}
+
+#wrapper{
+
+}
+
+#kontor{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+}
+
+footer{
+  background-color: #E6E6E6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  overflow:hidden;
+}
+#logofooter{
+  order:1;
+  width: 150px;
+  position: relative;
+  top: -90px;
+}
+#adresse{
+  order: 2;
+}
+
+
+@media only screen and (min-width: 650px) {
+  .imgpakketilbud{
+    width: 100%;
+    height: 700px;
+  }
+}
+
+
+
+@media only screen and (min-width: 900px) {
+
+/*PAKKETILBUD*/
+  .pakketilbud{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin: 100px;
+  }
+
+  .imgpakketilbud{
+    width: 500px;
+    height:inherit;
+    padding: 30px;
+  }
+
+  .contentpakke{
+    padding: 40px;
+    margin: 30px;
+  }
+
+  .headerpakke{
+    font-size: 50px;
+    padding-bottom: 40px;
+    padding-top: 60px;
+  }
+
+  .bestill{
+    transition: padding 0.3s ease-out;
+  }
+
+  .bestill:hover{
+    padding: 1.2em;
+  }
+
+  /*OM OSS*/
+
+  #contentkontakt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10%;
+  }
+
+  #bildediv{
+    margin: auto;
+    overflow: hidden;
+
+  }
+  #kontor{
+    margin-top: 10%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+}

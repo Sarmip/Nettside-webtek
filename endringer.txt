@@ -11,3 +11,7 @@ Pakketilbud:
 
 - endret størrelse på bildene til bredde på 500px.
 Mobilsiden forblir den samme.
+
+- endret navn på kontakt.html til om.html, det vil dermed stå om oss i navbaren
+
+
