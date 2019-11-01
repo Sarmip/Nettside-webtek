@@ -47,12 +47,12 @@ let t = document.createTextNode("Tips")
 tips.appendChild(t)
 li3.appendChild(tips)
 let kontakt = document.createElement("a")
-kontakt.href = "kontakt.html"
-let k = document.createTextNode("Kontakt")
+kontakt.href = "om.html"
+let k = document.createTextNode("Om oss")
 kontakt.appendChild(k)
 li4.appendChild(kontakt)
 let galleri = document.createElement("a")
-galleri.href = "galler.html"
+galleri.href = "galleri.html"
 let g = document.createTextNode("Galleri")
 galleri.appendChild(g)
 li5.appendChild(galleri)
