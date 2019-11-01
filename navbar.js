@@ -3,7 +3,7 @@ console.log("HEi funker jeg")
 
 let header = document.createElement("header")
 let div = document.createElement("div")
-div.setAttribute("id", "nav")
+div.setAttribute("class", "nav")
 
 let forside = document.createElement("a")
 forside.setAttribute("href", "forside.html")   //source: https://www.w3schools.com/jsref/met_element_setattribute.asp
@@ -61,4 +61,4 @@ li5.appendChild(galleri)
 div.appendChild(forside)
 div.appendChild(ul)
 header.appendChild(div)
-document.body.appendChild(header)
+document.body.prepend(header)

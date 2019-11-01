@@ -5,10 +5,14 @@
         <title>Bestilling - Bartebyen</title>
         <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet">
           <script src="https://kit.fontawesome.com/ac799ef0c1.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/test.css">
+        <!--<link rel="stylesheet" href="css/test.css">-->
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
-    <body id="bestill_body">
+    <body>
+      <div class="bestilling">
+
+
         <h1>Bestilling</h1>
         <p>Usikker på hvilke pakketilbud du skal velge? Les mer om dem <a href="../pakketilbud.html"><strong>HER.</strong></a></p>
         <form onsubmit="return bekreftelse()" id="bestill_skjema">
@@ -45,7 +49,7 @@
 
               <div class="boks">
                 <label for="navn">Navn:</label>
-                <input type="text" name="navn" class="bestill_input" id="navn" pattern="[A-Za-z]" required>
+                <input type="text" name="navn" class="bestill_input" id="navn" pattern="[A-Åa-å-]" required>
               </div>
 
               <div class="boks">
@@ -55,7 +59,7 @@
 
               <div class="boks">
                 <label for="telefonnr">Telefonnummer:</label>
-                <input type="text" class="bestill_input" name="telefonnr" id="telefonnr" pattern="[0-9]" required>
+                <input type="text" class="bestill_input" name="telefonnr" id="telefonnr" required>
               </div>
 
               <div class="boks">
@@ -66,9 +70,11 @@
               <input type="submit" class="bestill" value="Bekreft bestilling">
               <div id="bekreftelse"> <!-- FIKS: Burde se penere ut med CSS --->
                   <h3>Takk for din bestilling!</h3>
-                  <p>Du vil snart få en mail <span id="brukermail">fra oss</span>. Ha en fin dag videre!</p>
+                  <p>Du vil snart få en mail på <span id="brukermail"></span>. Ha en fin dag videre!</p>
             </div>
         </form>
+        </div>
         <script src="bestilling.js"></script>
+        <script src="navbar.js"></script>
     </body>
 </html>
