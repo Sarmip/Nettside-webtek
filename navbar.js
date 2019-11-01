@@ -3,7 +3,7 @@ console.log("HEi funker jeg")
 
 let header = document.createElement("header")
 let div = document.createElement("div")
-div.setAttribute("id", "nav")
+div.setAttribute("class", "nav")
 
 let forside = document.createElement("a")
 forside.setAttribute("href", "forside.html")   //source: https://www.w3schools.com/jsref/met_element_setattribute.asp
@@ -47,12 +47,12 @@ let t = document.createTextNode("Tips")
 tips.appendChild(t)
 li3.appendChild(tips)
 let kontakt = document.createElement("a")
-kontakt.href = "kontakt.html"
-let k = document.createTextNode("Kontakt")
+kontakt.href = "om.html"
+let k = document.createTextNode("Om oss")
 kontakt.appendChild(k)
 li4.appendChild(kontakt)
 let galleri = document.createElement("a")
-galleri.href = "galler.html"
+galleri.href = "galleri.html"
 let g = document.createTextNode("Galleri")
 galleri.appendChild(g)
 li5.appendChild(galleri)
@@ -61,4 +61,4 @@ li5.appendChild(galleri)
 div.appendChild(forside)
 div.appendChild(ul)
 header.appendChild(div)
-document.body.appendChild(header)
+document.body.prepend(header)

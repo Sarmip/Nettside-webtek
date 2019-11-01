@@ -6,9 +6,10 @@ function showSlides() {
   for (var i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-
   indexNr++;
-  if (indexNr > slides.length) {indexNr = 1}
+  if (indexNr > slides.length) {
+    indexNr = 1
+  }
   slides[indexNr-1].style.display = "block";
   setTimeout(showSlides, 3000); // endrer bildet hvert 3 sekund
 }

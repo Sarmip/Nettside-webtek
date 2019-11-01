@@ -6,11 +6,8 @@ padding: 0;
 background-color:#F5F5F5;
 
   }
-/*forside*/
-#front {
-  width: 100%;
 
-}
+/*forside*/
 #p1{
   float: left;
   width: 45%;
@@ -19,7 +16,7 @@ background-color:#F5F5F5;
   float: right;
   width: 45%;
 }
-#tekst{
+.tekst{
   font-size: 16px;
   line-height: 1.5;
   width: 95%;
@@ -27,6 +24,10 @@ background-color:#F5F5F5;
   margin-bottom: 10%;
 }
 
+
+
+
+/*navbar*/
 header{
 background: #EEEE;
 width:100%;
@@ -34,81 +35,58 @@ margin: 0 auto;
 font-size:18pt;
 }
 
-/*header::after{
-  content: '';
-  display: table;
-  clear: both;
-} */
-
 #logo{
   float: left;
   position: absolute;
   margin-left: 20px;
 }
 
-nav{
+.nav{
   height: 80px;
 }
 
-nav ul{
+.nav ul{
   margin:0;
   padding: 0;
   list-style: none;
   text-align: center;
   margin-left: 80px;
+  text-decoration: none;
+
 }
 
-nav li{
+.nav li{
   display: inline-block;
   margin-left: 90px;
   margin-top: 30px;
   margin-bottom: 30px;
-
-
   position: relative;
 }
-
 
 #logo{
   width: 200px;
   float: left;
 }
 
-nav a{
+.nav a{
   color: black;
   text-decoration: none;
   text-transform: uppercase;
 }
-nav li:hover {
+.nav li:hover {
   border-bottom: solid 3px #444;
-
+  font-weight: bold;
 }
 
-/*a:visited {
-  font-weight: bold;
-}*/
 
-/*nav:hover{
+a:visited {
+  font-weight: bold;
+}
+
+.nav:hover{
   color: #000;
 }
 
-nav a::before{
-  content: '';
-  display: block;
-  height: 5px;
-  width: 100%;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before{
-  width: 100%;
-}*/
 
 /* FOOTER */
 footer{
@@ -211,10 +189,11 @@ footer{
   grid-column: 1/2;
 }
 
-#kontor{
+/*#kontor{
   grid-column: 2/3;
   grid-row:
 }
+ikke fullført*/
 
 
 
@@ -251,5 +230,103 @@ footer{
   .bestill:hover{
     padding: 1em;
   }
+}
 
+/*<<<<<<< HEAD
+  #kontor{
+    width: 10px;
+    height: 10px;
+ }
+*/
+
+/*Bestilling*/
+
+.bestilling{
+  padding: 10%;
+}
+
+.select_bestill{
+  position: relative;
+}
+
+.select_bestill select{
+  background: white;
+  padding: 10px;
+  width: 250px;
+  border: #2D2D2D 1px solid;
+  font-size: 1em;
+  outline: none;
+
+}
+
+.select_bestill:before{
+  content: '\f078';
+  font-family: "FontAwesome";
+  font-size: 23px;
+  color:#aaa;
+  position: absolute;
+  left: 195px;
+  top: 12px;
+  height: 40px;
+  width: 50px;
+  text-align: center;
+/*  pointer-events: none;*/
+}
+
+
+#bestill_skjema{
+
+}
+
+#pakketilbud{
+
+}
+
+.boks{
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+
+#alle_input{
+  display: flex;
+  flex-direction: column;
+}
+
+.bestill_input{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background: white;
+  border:none
+  /*#2D2D2D 1px solid;*/
+  font-size: 1em;
+}
+
+#dato{
+  padding: 0;
+  background: white;
+  text-align: left;
+}
+
+
+#deltakere, #pris{
+  height: 20px;
+}
+
+.bestill_input textarea{
+
+}
+
+#bekreftelse { visibility: hidden; }
+
+/*GALLERI*/
+
+.column img{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
