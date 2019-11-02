@@ -45,10 +45,18 @@ body{
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 15px;
-  float: right;
+  float:right;
+
 }
+
 .bestill:hover{
   padding: 1em;
+}
+
+/*TIPS*/
+#tips_innledning{
+  padding: 60px;
+
 }
 
 /*KONTAKT*/
@@ -211,6 +219,18 @@ footer{
    flex-direction: row;
    justify-content: space-evenly;
    margin: 100px;
+  }
+
+  #img_samfundet{
+    width: 500px;
+    height:inherit;
+    padding-left: 30px;
+  }
+
+  #header_samfundet{
+    flex-wrap: wrap;
+    word-wrap: break-word;
+
   }
 
   .imgpakketilbud{
