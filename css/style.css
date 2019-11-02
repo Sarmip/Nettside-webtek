@@ -87,6 +87,16 @@ a:visited {
   color: #000;
 }
 
+label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+}
+
+#toogle{
+  display: none;
+}
 
 /* FOOTER */
 footer{
