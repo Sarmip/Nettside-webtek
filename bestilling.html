@@ -6,16 +6,16 @@
         <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet">
         <!--<link rel="stylesheet" href="css/style.css">-->
         <link rel="stylesheet" href="css/test.css">
-        <style>
-            #bekreftelse { visibility: hidden; }
-        </style>
     </head>
     <body>
       <div class="bestill_body">
-        <h1>Bestilling</h1>
-        <p>Usikker på hvilke pakketilbud du skal velge? Les mer om dem <a href="../pakketilbud.html"><strong>HER.</strong></a></p>
+        <div class="bestill_innledning">
+            <h1>Bestilling</h1>
+            <p>Usikker på hvilke pakketilbud du skal velge? Les mer om dem <a href="pakketilbud.html" id="pakkelink">HER.</a></p>
+        </div>
+        
         <form onsubmit="return bekreftelse()" id="bestill_skjema">
-            <label for="pakketilbud">Velg pakketilbud:</label>
+            <label for="pakketilbud" class="bestill_labels">Velg pakketilbud:</label>
             <div class="select_bestill">
               <select id="pakketilbud" required onchange="visPris()">
 
@@ -32,45 +32,46 @@
             <div id="alle_input">
 
               <div class="boks">
-                <label for="dato">Dato:</label>
-                <input type="date" class="bestill_input" name="dato" id="dato" required> <!-- FIKS: Legge til min-dato? -->
+                <label for="dato" class="bestill_labels">Dato:</label>
+                <input type="date" name="dato" id="dato" required> 
               </div>
 
               <div class="boks">
-                <label for="deltakere">Antall deltakere:</label>
+                <label for="deltakere" class="bestill_labels">Antall deltakere:</label>
                 <input type="number" class="bestill_input" name="deltakere" id="deltakere" min="1" value="1" onchange="visPris()" required>
               </div>
 
               <div class="boks">
-                <label for="pris">Pris:</label> <!-- OBS: Var ikke med i P2; må inkludere i P3 -->
-                <input type="text" class="bestill_input" id="pris" name="pris" disabled> <!-- FIKS: Kanskje output istedenfor? -->
+                <label for="pris" class="bestill_labels">Pris:</label> 
+                <input type="text" class="bestill_input" id="pris" name="pris" disabled> 
               </div>
 
               <div class="boks">
-                <label for="navn">Navn:</label>
+                <label for="navn" class="bestill_labels">Navn:</label>
                 <input type="text" name="navn" class="bestill_input" id="navn" pattern="^[A-Za-zæøåÆØÅ\s-]*$" required>
               </div>
 
-              <div class="boks">
-                <label for="epost">E-post:</label>
+              <div class="boks" class="bestill_labels">
+                <label for="epost" class="bestill_labels">E-post:</label>
                 <input type="email" class="bestill_input" name="epost" id="epost" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onkeyup="visMail()" required>
               </div>
 
               <div class="boks">
-                <label for="telefonnr">Telefonnummer:</label>
+                <label for="telefonnr" class="bestill_labels">Telefonnummer:</label>
                 <input type="text" class="bestill_input" name="telefonnr" id="telefonnr" pattern="^[0-9]*$" required>
               </div>
 
               <div class="boks">
-                <label for="kommentar">Andre kommentarer:</label>
-                <textarea class="bestill_input" placeholder="Allergier o.l."></textarea>
+                <label for="kommentar" class="bestill_labels">Andre kommentarer:</label>
+                <textarea class="bestill_input" placeholder="Allergier o.l." id="kommentarer"></textarea>
               </div>
 
-              <input type="submit" class="bestill" value="Bekreft bestilling">
-              <div id="bekreftelse"> <!-- FIKS: Burde se penere ut med CSS --->
+              <input type="submit" class="bestill" id="bekreftboks" value="Bekreft bestilling">
+              <div id="bekreftelse" class="bekrefttekst"> 
                   <h3>Takk for din bestilling!</h3>
-                  <p>Du vil snart få en mail på <span id="brukermail"></span>. Ha en fin dag videre!</p>
-            </div>
+                  <p>Du vil snart få en mail <span id="brukermail">fra oss</span>. <p>Ha en fin dag videre!</p></p>
+            
+              </div>
           </div>
         </form>
         </div>
