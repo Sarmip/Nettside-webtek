@@ -1,8 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body{
   font-family: 'Armata', sans-serif;
   font-size: 1em;
   background-color:#F5F5F5;
-  margin: 0;
+  color: #202020;
 }
 
   /*PAKKETILBUD*/
@@ -31,6 +38,7 @@ body{
 .headerpakke{
   padding-bottom: 20px;
   padding-top: 10px;
+  font-size: 2em;
 }
 
 .bestill{
@@ -54,10 +62,7 @@ body{
 }
 
 /*TIPS*/
-#tips_innledning{
-  padding: 60px;
 
-}
 
 /*KONTAKT*/
 h2{
@@ -218,7 +223,10 @@ footer{
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   margin: 100px;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   padding-right: 10%;
+   padding-left: 10%;
   }
 
   #img_samfundet{
@@ -235,7 +243,8 @@ footer{
 
   .imgpakketilbud{
     width: 500px;
-    height:inherit;
+    height:700px;
+    object-fit: cover;
     padding: 30px;
   }
 
@@ -245,9 +254,10 @@ footer{
   }
 
   .headerpakke{
-    font-size: 50px;
+    font-size: 200%;
     padding-bottom: 40px;
     padding-top: 60px;
+    width: 300px;
   }
 
   .bestill{
