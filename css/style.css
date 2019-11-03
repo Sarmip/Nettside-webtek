@@ -178,6 +178,11 @@ footer{
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 1em;
+<<<<<<< HEAD
+
+#kontaktside{
+=======
+>>>>>>> 76a76e07c1cf1768108e2ce64c776711edc730a8
 }
 
 .innhold{

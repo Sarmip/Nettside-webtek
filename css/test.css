@@ -45,10 +45,18 @@ body{
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 15px;
-  float: right;
+  float:right;
+
 }
+
 .bestill:hover{
   padding: 1em;
+}
+
+/*TIPS*/
+#tips_innledning{
+  padding: 60px;
+
 }
 
 /*KONTAKT*/
@@ -61,9 +69,9 @@ h2{
   padding: 10%;
 }
 
-#kontaktomoss{
-  padding:10%;
-  padding-bottom: 20px;
+#kontakt_om_oss{
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #wrapper{
@@ -156,7 +164,7 @@ footer{
   flex-direction: column;
   width: 80%;
   background: white;
-  border:none
+  border:none;
   /*#2D2D2D 1px solid;*/
   font-size: 1em;
   font-family: 'Armata', sans-serif;
@@ -213,6 +221,18 @@ footer{
    margin: 100px;
   }
 
+  #img_samfundet{
+    width: 500px;
+    height:inherit;
+    padding-left: 30px;
+  }
+
+  #header_samfundet{
+    flex-wrap: wrap;
+    word-wrap: break-word;
+
+  }
+
   .imgpakketilbud{
     width: 500px;
     height:inherit;
@@ -260,7 +280,7 @@ footer{
   /*GALLERI*/
   .row{
     display: flex;
-    flex-wrap; wrap;
+    flex-wrap: wrap;
     padding: 0;
   }
 
