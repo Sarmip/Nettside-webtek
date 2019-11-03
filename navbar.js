@@ -1,5 +1,5 @@
 
-console.log("HEi funker jeg")
+console.log("Hei funker jeg")
 
 let header = document.createElement("header")
 let div = document.createElement("div")
