@@ -9,7 +9,7 @@ function visPris() {
 function bekreftelse() {
     event.preventDefault(); // Gjør at siden ikke refresher når man submitter
     var bekreftelse = document.getElementById("bekreftelse");
-    bekreftelse.style.visibility = "visible";
+    bekreftelse.style.display = "block";
 }
 
 function visMail() {
