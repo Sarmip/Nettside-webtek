@@ -1,8 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body{
   font-family: 'Armata', sans-serif;
   font-size: 1em;
   background-color:#F5F5F5;
-  margin: 0;
+  color: #202020;
 }
 
 /*forside*/
@@ -60,6 +67,7 @@ label{
 .headerpakke{
   padding-bottom: 20px;
   padding-top: 10px;
+  font-size: 2em;
 }
 
 .bestill{
@@ -83,10 +91,11 @@ label{
 }
 
 /*TIPS*/
-#tips_innledning{
-  padding: 60px;
 
+#tips_innledning {
+  display: flex !important;
 }
+
 
 /*KONTAKT*/
 h2{
@@ -116,7 +125,7 @@ h2{
 }
 
 footer{
-  background-color: #E6E6E6;
+  background-color: #F2F1EC;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -243,14 +252,17 @@ footer{
 
 
 /*DESKTOP*/
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1100px) {
 
 /*PAKKETILBUD*/
   .pakketilbud{
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   margin: 100px;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   padding-right: 10%;
+   padding-left: 10%;
   }
 
   #img_samfundet{
@@ -267,7 +279,8 @@ footer{
 
   .imgpakketilbud{
     width: 500px;
-    height:inherit;
+    height:700px;
+    object-fit: cover;
     padding: 30px;
   }
 
@@ -277,9 +290,10 @@ footer{
   }
 
   .headerpakke{
-    font-size: 50px;
+    font-size: 200%;
     padding-bottom: 40px;
     padding-top: 60px;
+    width: 300px;
   }
 
   .bestill{
@@ -342,21 +356,21 @@ footer{
     justify-content: center;
     box-shadow: 5px 10px 20px darkgrey;
   }
-<<<<<<< HEAD
-=======
 
   /*navbar*/
   header{
-  background: #EEEE;
+  background: #F2F1EC;
   width:100%;
   margin: 0 auto;
-  font-size:18pt;
+  font-size:25px;
   }
 
   #logo{
     float: left;
     position: absolute;
     margin-left: 20px;
+    width: 200px;
+    float: left;
   }
 
   .nav{
@@ -384,10 +398,7 @@ footer{
     position: relative;
   }
 
-  #logo{
-    width: 200px;
-    float: left;
-  }
+
 
   .nav a{
     color: black;
@@ -408,7 +419,7 @@ footer{
     color: #000;
   }
 
-  header{
+  /*header{
   background: #EEEE;
   width:100%;
   margin: 0 auto;
@@ -465,7 +476,7 @@ footer{
 
   .nav:hover{
     color: #000;
-  }
+  }*/
 
   label{
     margin: 0 40px 0 0;
@@ -480,6 +491,22 @@ footer{
     display: none;
   }
 
+  /*forside*/
+  #p1{
+    float: left;
+    width: 45%;
+  }
+  #p2{
+    float: right;
+    width: 45%;
+  }
+  .tekst{
+    font-size: 16px;
+    line-height: 1.5;
+    width: 95%;
+    margin: 2% auto 5%;
+    margin-bottom: 10%;
+  }
+
 
 }
->>>>>>> f0cea53deaaf52e3cbd65ea3d64abcfa444165e5
