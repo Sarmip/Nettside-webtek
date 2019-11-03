@@ -12,23 +12,6 @@ body{
   color: #202020;
 }
 
-/*forside*/
-
-#p1{
-  float: left;
-  width: 45%;
-}
-#p2{
-  float: right;
-  width: 45%;
-}
-.tekst{
-  font-size: 16px;
-  line-height: 1.5;
-  width: 95%;
-  margin: 2% auto 5%;
-  margin-bottom: 10%;
-}
 
 /*navbar*/
 label{
@@ -52,8 +35,29 @@ label{
   display: block;
 }
 
+/*FOOTER*/
 
-
+footer{
+  background-color: #F2F1EC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  padding-top: 40px;
+}
+#logofooter{
+  order:1;
+  width: 150px;
+  position: relative;
+  top: -95px;
+}
+.adresse{
+  order: 2;
+  width: 150px;
+}
+.kontakt{
+  width: 150px;
+}
 
 
 
@@ -138,24 +142,6 @@ h2{
   margin: 0 auto;
   margin-bottom: 50px;
 
-}
-
-footer{
-  background-color: #F2F1EC;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100vw;
-  overflow:hidden;
-}
-#logofooter{
-  order:1;
-  width: 150px;
-  position: relative;
-  top: -90px;
-}
-#adresse{
-  order: 2;
 }
 
 /*BESTILLING*/
@@ -267,7 +253,7 @@ footer{
 }
 
 
-/*DESKTOP versjon*/
+/*DESKTOP*/
 @media only screen and (min-width: 1100px) {
 
   /*FORSIDE*/
@@ -387,6 +373,8 @@ footer{
     justify-content: center;
   }
 
+
+  }
   #row {
     display: flex;
     flex-wrap: wrap;
@@ -440,8 +428,8 @@ footer{
     text-align: center;
     margin-left: 80px;
     text-decoration: none;
-  }
 
+  }
   .menu{
     display: block;
   }
@@ -453,6 +441,8 @@ footer{
     margin-bottom: 30px;
     position: relative;
   }
+
+
 
   .nav a{
     color: black;
@@ -543,6 +533,23 @@ footer{
 
   #toggle{
     display: none;
+  }
+
+  /*forside*/
+  #p1{
+    float: left;
+    width: 45%;
+  }
+  #p2{
+    float: right;
+    width: 45%;
+  }
+  .tekst{
+    font-size: 16px;
+    line-height: 1.5;
+    width: 95%;
+    margin: 2% auto 5%;
+    margin-bottom: 10%;
   }
 
 
