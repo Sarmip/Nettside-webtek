@@ -11,15 +11,15 @@
       <div class="bestill_body">
         <div class="bestill_innledning">
             <h1>Bestilling</h1>
-            <p>Usikker på hvilke pakketilbud du skal velge? Les mer om dem <a href="pakketilbud.html" id="pakkelink">HER.</a></p>
+            <p>Usikker på hvilke pakketilbud du skal velge? Les mer om dem <a href="pakketilbud.html" id="bestill_link">HER.</a></p>
         </div>
         
         <form onsubmit="return bekreftelse()" id="bestill_skjema">
-            <label for="pakketilbud" class="bestill_labels">Velg pakketilbud:</label>
-            <div class="select_bestill">
-              <select id="pakketilbud" required onchange="visPris()">
+          <label for="pakketilbud" class="bestill_labels">Velg pakketilbud:</label>
+            <div class="bestill_select">
+              <select id="pakketilbud" onchange="visPris()" required>
 
-                  <option value="f">Velg pakketilbud</option>
+                  <option value="">Velg pakketilbud</option>
                   <option id="pakketilbud1" value=670>Baristakurs</option>
                   <option id="pakketilbud2" value=750>Byvandring</option>
                   <option id="pakketilbud3" value=400>Fotosafari</option>
@@ -33,7 +33,7 @@
 
               <div class="boks">
                 <label for="dato" class="bestill_labels">Dato:</label>
-                <input type="date" name="dato" id="dato" required> 
+                <input type="date" class="bestill_input" name="dato" id="dato" required> 
               </div>
 
               <div class="boks">
@@ -66,11 +66,11 @@
                 <textarea class="bestill_input" placeholder="Allergier o.l." id="kommentarer"></textarea>
               </div>
 
-              <input type="submit" class="bestill" id="bekreftboks" value="Bekreft bestilling">
+              <input type="submit" class="bestill" id="bestill_knapp" value="Bekreft bestilling">
               <div id="bekreftelse" class="bekrefttekst"> 
                   <h3>Takk for din bestilling!</h3>
                   <p>Du vil snart få en mail <span id="brukermail">fra oss</span>. <p>Ha en fin dag videre!</p></p>
-            
+    
               </div>
           </div>
         </form>
