@@ -340,21 +340,21 @@ footer{
     justify-content: center;
     box-shadow: 5px 10px 20px darkgrey;
   }
-<<<<<<< HEAD
-=======
 
   /*navbar*/
   header{
   background: #EEEE;
   width:100%;
   margin: 0 auto;
-  font-size:18pt;
+  font-size:25px;
   }
 
   #logo{
     float: left;
     position: absolute;
     margin-left: 20px;
+    width: 200px;
+    float: left;
   }
 
   .nav{
@@ -382,10 +382,7 @@ footer{
     position: relative;
   }
 
-  #logo{
-    width: 200px;
-    float: left;
-  }
+
 
   .nav a{
     color: black;
@@ -406,7 +403,7 @@ footer{
     color: #000;
   }
 
-  header{
+  /*header{
   background: #EEEE;
   width:100%;
   margin: 0 auto;
@@ -463,7 +460,7 @@ footer{
 
   .nav:hover{
     color: #000;
-  }
+  }*/
 
   label{
     margin: 0 40px 0 0;
@@ -478,6 +475,22 @@ footer{
     display: none;
   }
 
+  /*forside*/
+  #p1{
+    float: left;
+    width: 45%;
+  }
+  #p2{
+    float: right;
+    width: 45%;
+  }
+  .tekst{
+    font-size: 16px;
+    line-height: 1.5;
+    width: 95%;
+    margin: 2% auto 5%;
+    margin-bottom: 10%;
+  }
+
 
 }
->>>>>>> f0cea53deaaf52e3cbd65ea3d64abcfa444165e5
