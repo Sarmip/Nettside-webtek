@@ -90,6 +90,10 @@ label{
 
 /*TIPS*/
 
+#tips_innledning {
+  display: flex !important;
+}
+
 
 /*KONTAKT*/
 h2{
@@ -119,7 +123,7 @@ h2{
 }
 
 footer{
-  background-color: #E6E6E6;
+  background-color: #F2F1EC;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -246,7 +250,7 @@ footer{
 
 
 /*DESKTOP*/
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1100px) {
 
 /*PAKKETILBUD*/
   .pakketilbud{
@@ -353,7 +357,7 @@ footer{
 
   /*navbar*/
   header{
-  background: #EEEE;
+  background: #F2F1EC;
   width:100%;
   margin: 0 auto;
   font-size:25px;
