@@ -61,7 +61,9 @@ footer{
 
 
 
-  /*PAKKETILBUD*/
+
+
+  /*PAKKETILBUD (+TIPS)*/
 .alt{
   display: flex;
   flex-flow: column wrap;
@@ -69,6 +71,7 @@ footer{
 }
 
 .pakketilbud{
+  padding-top: 50px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -114,6 +117,12 @@ footer{
 
 #tips_innledning {
   display: flex !important;
+
+}
+
+.paragraf_tips{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 
@@ -267,18 +276,6 @@ h2{
    padding-left: 10%;
   }
 
-  #img_samfundet{
-    width: 500px;
-    height:inherit;
-    padding-left: 30px;
-  }
-
-  #header_samfundet{
-    flex-wrap: wrap;
-    word-wrap: break-word;
-
-  }
-
   .imgpakketilbud{
     width: 500px;
     height:700px;
@@ -305,6 +302,14 @@ h2{
   .bestill:hover{
     padding: 1.2em;
   }
+
+  /*TIPS*/
+
+  #wrapper_tips{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
 
   /*OM OSS*/
 
