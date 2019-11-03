@@ -318,7 +318,9 @@ ikke fullført*/
 
 }
 
-#bekreftelse { visibility: hidden; }
+#bekreftelse {
+  visibility: hidden;
+ }
 
 /*GALLERI*/
 
