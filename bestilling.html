@@ -4,15 +4,14 @@
         <meta charset="UTF-8">
         <title>Bestilling - Bartebyen</title>
         <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet">
-          <script src="https://kit.fontawesome.com/ac799ef0c1.js" crossorigin="anonymous"></script>
-        <!--<link rel="stylesheet" href="css/test.css">-->
-        <link rel="stylesheet" href="css/style.css">
-
+        <!--<link rel="stylesheet" href="css/style.css">-->
+        <link rel="stylesheet" href="css/test.css">
+        <style>
+            #bekreftelse { visibility: hidden; }
+        </style>
     </head>
     <body>
-      <div class="bestilling">
-
-
+      <div class="bestill_body">
         <h1>Bestilling</h1>
         <p>Usikker på hvilke pakketilbud du skal velge? Les mer om dem <a href="../pakketilbud.html"><strong>HER.</strong></a></p>
         <form onsubmit="return bekreftelse()" id="bestill_skjema">
@@ -20,7 +19,7 @@
             <div class="select_bestill">
               <select id="pakketilbud" required onchange="visPris()">
 
-                  <option value="f">Se alle</option>
+                  <option value="f">Velg pakketilbud</option>
                   <option id="pakketilbud1" value=670>Baristakurs</option>
                   <option id="pakketilbud2" value=750>Byvandring</option>
                   <option id="pakketilbud3" value=400>Fotosafari</option>
@@ -49,17 +48,17 @@
 
               <div class="boks">
                 <label for="navn">Navn:</label>
-                <input type="text" name="navn" class="bestill_input" id="navn" pattern="[A-Åa-å-]" required>
+                <input type="text" name="navn" class="bestill_input" id="navn" pattern="^[A-Za-zæøåÆØÅ\s-]*$" required>
               </div>
 
               <div class="boks">
                 <label for="epost">E-post:</label>
-                <input type="email" class="bestill_input" name="epost" id="epost" onkeyup="visMail()" required>
+                <input type="email" class="bestill_input" name="epost" id="epost" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onkeyup="visMail()" required>
               </div>
 
               <div class="boks">
                 <label for="telefonnr">Telefonnummer:</label>
-                <input type="text" class="bestill_input" name="telefonnr" id="telefonnr" required>
+                <input type="text" class="bestill_input" name="telefonnr" id="telefonnr" pattern="^[0-9]*$" required>
               </div>
 
               <div class="boks">
