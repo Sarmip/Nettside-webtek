@@ -12,6 +12,7 @@ body{
   color: #202020;
 }
 
+
 /*navbar*/
 label{
   display: block;
@@ -34,12 +35,37 @@ label{
   display: block;
 }
 
+/*FOOTER*/
+
+footer{
+  background-color: #F2F1EC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+#logofooter{
+  order:1;
+  width: 100px;
+  position: relative;
+  top: -95px;
+  max-height: 100px;
+}
+.adresse{
+  order: 2;
+  width: 150px;
+}
+.kontakt{
+  width: 150px;
+}
 
 
 
 
 
-  /*PAKKETILBUD*/
+  /*PAKKETILBUD (+TIPS)*/
 .alt{
   display: flex;
   flex-flow: column wrap;
@@ -47,6 +73,7 @@ label{
 }
 
 .pakketilbud{
+  padding-top: 50px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -91,6 +118,12 @@ label{
 
 #tips_innledning {
   display: flex !important;
+
+}
+
+.paragraf_tips{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 
@@ -263,6 +296,56 @@ footer{
 /*DESKTOP*/
 @media only screen and (min-width: 1100px) {
 
+  footer{
+    padding: 10px;
+  }
+
+  #logofooter{
+    width: 150px;
+    max-height: 150px;
+  }
+
+  /*FORSIDE*/
+  /* container til slideshow*/
+  .slideshow-container {
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none; /* gjemmer bildene til defualt */
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  .forsidebildet{
+    height: 600px;
+    width: 100%;
+  }
+
+  @keyframes fade { /*bildene skal ha en fading overgang*/
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  #p1{
+    float: left;
+    width: 45%;
+    margin: 5px;
+  }
+  #p2{
+    float: right;
+    width: 45%;
+    margin: 5px;
+  }
+  .tekst{
+    font-size: 16px;
+    line-height: 1.5;
+    width: 95%;
+    margin: 2% auto 5%;
+    margin-bottom: 10%;
+  }
+
 /*PAKKETILBUD*/
   .pakketilbud{
    display: flex;
@@ -272,18 +355,6 @@ footer{
    padding-bottom: 100px;
    padding-right: 10%;
    padding-left: 10%;
-  }
-
-  #img_samfundet{
-    width: 500px;
-    height:inherit;
-    padding-left: 30px;
-  }
-
-  #header_samfundet{
-    flex-wrap: wrap;
-    word-wrap: break-word;
-
   }
 
   .imgpakketilbud{
@@ -312,6 +383,14 @@ footer{
   .bestill:hover{
     padding: 1.2em;
   }
+
+  /*TIPS*/
+
+  #wrapper_tips{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
 
   /*OM OSS*/
 
@@ -380,6 +459,7 @@ footer{
     margin-left: 20px;
     width: 200px;
     float: left;
+    z-index: 10; /*flytter logoen frem foran blidene*/
   }
 
   .nav{
