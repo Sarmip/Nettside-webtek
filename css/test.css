@@ -81,7 +81,6 @@ label{
   margin-bottom: 30px;
   font-size: 15px;
   float:right;
-
 }
 
 .bestill:hover{
@@ -140,31 +139,54 @@ footer{
   order: 2;
 }
 
-/*BESTILLING*/
+/* BESTILLING */
+
+#bekreftelse { 
+  /* visibility: hidden;  */
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 60%;
+  text-align: center;
+}
+
+#pakkelink {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#pakkelink:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+#pakkelink:visited {
+  color: #080808;
+}
+
+#pakkelink:active {
+  color: #282828;
+}
 
 .bestill_body{
   margin: 200px;
-  padding:10px;
-
-
+  padding: 10px;
 }
 
-/*.select_bestill{
+/* .select_bestill {
   position: relative;
-}*/
+} */
 
-.select_bestill select{
+.select_bestill select { /* Dropdown */
   background: white;
   padding: 10px;
   width: 250px;
-  border: #2D2D2D 1px solid;
   font-size: 1em;
   font-family: 'Armata', sans-serif;
-  outline: none;
-
+  /* outline: none; */
 }
 
-.select_bestill:before{
+/* .select_bestill:before {
   content: '\f078';
   font-family: "FontAwesome";
   font-size: 23px;
@@ -176,58 +198,47 @@ footer{
   width: 50px;
   text-align: center;
   pointer-events: none;
+} */
+
+.boks { /* Blir mer mellomrom mellom input */
+  margin: 15px 0px 10px 0px;
+}
+.bestill_innledning {
+  margin-bottom: 20px;
+} 
+
+.bestill_labels {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-
-#bestill_skjema{
-
-}
-
-#pakketilbud{
-
-}
-
-.boks{
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-
-#alle_input{
+#alle_input{ 
   display: flex;
   flex-direction: column;
 }
 
-.bestill_input{
+.bestill_input { /* Alle input */
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 60%;
   background: white;
-  border:none;
-  /*#2D2D2D 1px solid;*/
   font-size: 1em;
   font-family: 'Armata', sans-serif;
-
-
+  padding: 3px;
 }
 
-#dato{
-  width:50%;
-  padding: 0;
-  background: white;
+#dato, #deltakere, #pris {
+  width: 30%;
+  font-size: 1em;
+  font-family: 'Armata', sans-serif;
+  padding: 3px;
+}
+
+#kommentarer {
+  height: 100px;
 }
 
 
-#deltakere, #pris{
-  width: 50%;
-  height: 20px;
-}
-
-.bestill_input textarea{
-
-}
-
-#bekreftelse { visibility: hidden; }
 
 /*GALLERI*/
 
@@ -476,14 +487,14 @@ footer{
     color: #000;
   }*/
 
-  label{
+  /* label{
     margin: 0 40px 0 0;
     font-size: 26px;
     line-height: 70px;
     display: none;
     width: 26px;
     float: left;
-  }
+  } */
 
   #toggle{
     display: none;

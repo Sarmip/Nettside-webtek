@@ -17,3 +17,4 @@ Mobilsiden forblir den samme.
 
 Bestilling:
 - La til et felt der man kan se prisen avhengig av hvilken pakketilbud man velger og hvor mange deltakere som skal være med
+- Inputboksene er alltid under label, både på desktop- og mobilversjonen
