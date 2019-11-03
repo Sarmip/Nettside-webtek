@@ -14,6 +14,22 @@ body{
 
 /*forside*/
 
+#p1{
+  float: left;
+  width: 45%;
+}
+#p2{
+  float: right;
+  width: 45%;
+}
+.tekst{
+  font-size: 16px;
+  line-height: 1.5;
+  width: 95%;
+  margin: 2% auto 5%;
+  margin-bottom: 10%;
+}
+
 /*navbar*/
 label{
   display: block;
@@ -251,8 +267,32 @@ footer{
 }
 
 
-/*DESKTOP*/
+/*DESKTOP versjon*/
 @media only screen and (min-width: 1100px) {
+
+  /*FORSIDE*/
+  /* container til slideshow*/
+  .slideshow-container {
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none; /* gjemmer bildene til defualt */
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  .forsidebildet{
+    height: 500px;
+    width: 100%;
+  }
+
+  @keyframes fade { /*bildene skal ha en fading overgang*/
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 /*PAKKETILBUD*/
   .pakketilbud{
@@ -330,8 +370,6 @@ footer{
     justify-content: center;
   }
 
-
-  }
   #row {
     display: flex;
     flex-wrap: wrap;
@@ -384,8 +422,8 @@ footer{
     text-align: center;
     margin-left: 80px;
     text-decoration: none;
-
   }
+
   .menu{
     display: block;
   }
@@ -397,8 +435,6 @@ footer{
     margin-bottom: 30px;
     position: relative;
   }
-
-
 
   .nav a{
     color: black;
@@ -507,6 +543,4 @@ footer{
     margin: 2% auto 5%;
     margin-bottom: 10%;
   }
-
-
 }
