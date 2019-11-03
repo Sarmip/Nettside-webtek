@@ -15,3 +15,5 @@ Mobilsiden forblir den samme.
 - endret navn på kontakt.html til om.html, det vil dermed stå om oss i navbaren
 
 
+Bestilling:
+- La til et felt der man kan se prisen avhengig av hvilken pakketilbud man velger og hvor mange deltakere som skal være med
