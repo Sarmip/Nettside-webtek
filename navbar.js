@@ -5,6 +5,14 @@ let header = document.createElement("header")
 let div = document.createElement("div")
 div.setAttribute("class", "nav")
 
+let toggle = document.createElement("label")
+toggle.setAttribute("for","toggle")
+let toggletext = document.createTextNode("☰")
+toggle.appendChild(toggletext)
+let toggle1 = document.createElement("input")
+toggle1.setAttribute("type","checkbox")
+toggle1.setAttribute("id", "toggle")
+
 let forside = document.createElement("a")
 forside.setAttribute("href", "forside.html")   //source: https://www.w3schools.com/jsref/met_element_setattribute.asp
 let img = document.createElement("img")
@@ -18,6 +26,9 @@ img.setAttribute("alt", "logo")
 
 forside.appendChild(img) //legget til bildet i link elemente
 
+let menu = document.createElement("div")
+menu.setAttribute("class", "menu")
+
 let ul = document.createElement("ul")
 let li1 = document.createElement("li")
 let li2 = document.createElement("li")
@@ -30,6 +41,8 @@ ul.appendChild(li2)
 ul.appendChild(li3)
 ul.appendChild(li4)
 ul.appendChild(li5)
+
+menu.appendChild(ul)
 
 let pakketilbud = document.createElement("a")
 pakketilbud.href = "pakketilbud.html"
@@ -57,8 +70,9 @@ let g = document.createTextNode("Galleri")
 galleri.appendChild(g)
 li5.appendChild(galleri)
 
-
+div.appendChild(toggle)
+div.appendChild(toggle1)
 div.appendChild(forside)
-div.appendChild(ul)
+div.appendChild(menu)
 header.appendChild(div)
 document.body.prepend(header)

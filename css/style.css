@@ -87,6 +87,16 @@ a:visited {
   color: #000;
 }
 
+label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+}
+
+#toogle{
+  display: none;
+}
 
 /* FOOTER */
 footer{
@@ -239,9 +249,10 @@ ikke fullført*/
  }
 */
 
+
 /*Bestilling*/
 
-.bestilling{
+/*.bestilling{
   padding: 10%;
 }
 
@@ -274,7 +285,7 @@ ikke fullført*/
 }
 
 
-#bestill_skjema{
+/*#bestill_skjema{
 
 }
 
@@ -300,7 +311,7 @@ ikke fullført*/
   background: white;
   border:none
   /*#2D2D2D 1px solid;*/
-  font-size: 1em;
+  /*font-size: 1em;
 }
 
 #dato{
