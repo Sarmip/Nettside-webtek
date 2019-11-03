@@ -188,6 +188,11 @@ footer{
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 1em;
+<<<<<<< HEAD
+
+#kontaktside{
+=======
+>>>>>>> 76a76e07c1cf1768108e2ce64c776711edc730a8
 }
 
 .innhold{
@@ -244,9 +249,10 @@ ikke fullført*/
  }
 */
 
+
 /*Bestilling*/
 
-.bestilling{
+/*.bestilling{
   padding: 10%;
 }
 
@@ -279,7 +285,7 @@ ikke fullført*/
 }
 
 
-#bestill_skjema{
+/*#bestill_skjema{
 
 }
 
@@ -305,7 +311,7 @@ ikke fullført*/
   background: white;
   border:none
   /*#2D2D2D 1px solid;*/
-  font-size: 1em;
+  /*font-size: 1em;
 }
 
 #dato{

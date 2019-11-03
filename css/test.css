@@ -4,26 +4,26 @@ body{
   background-color:#F5F5F5;
   margin: 0;
 }
+
 /*navbar*/
 label{
   display: block;
-  cursor: pointer;
 }
 
-nav ul{
+.menu{
   text-align: center;
   width: 100%;
   display: none;
 
 }
 
-nav ul li a{
+.menu a{
   display: block;
-  border-bottom: 1px solid #fff;
   margin: 0;
+  text-decoration: none;
 }
 
-#toogle:checked + nav ul{
+#toggle:checked + .menu{
   display: block;
 }
 
@@ -72,10 +72,18 @@ nav ul li a{
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 15px;
-  float: right;
+  float:right;
+
 }
+
 .bestill:hover{
   padding: 1em;
+}
+
+/*TIPS*/
+#tips_innledning{
+  padding: 60px;
+
 }
 
 /*KONTAKT*/
@@ -88,9 +96,9 @@ h2{
   padding: 10%;
 }
 
-#kontaktomoss{
-  padding:10%;
-  padding-bottom: 20px;
+#kontakt_om_oss{
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #wrapper{
@@ -125,13 +133,16 @@ footer{
 
 /*BESTILLING*/
 
-#bestill_body{
-  padding: 10%;
+.bestill_body{
+  margin: 200px;
+  padding:10px;
+
+
 }
 
-.select_bestill{
+/*.select_bestill{
   position: relative;
-}
+}*/
 
 .select_bestill select{
   background: white;
@@ -183,7 +194,7 @@ footer{
   flex-direction: column;
   width: 80%;
   background: white;
-  border:none
+  border:none;
   /*#2D2D2D 1px solid;*/
   font-size: 1em;
   font-family: 'Armata', sans-serif;
@@ -240,6 +251,18 @@ footer{
    margin: 100px;
   }
 
+  #img_samfundet{
+    width: 500px;
+    height:inherit;
+    padding-left: 30px;
+  }
+
+  #header_samfundet{
+    flex-wrap: wrap;
+    word-wrap: break-word;
+
+  }
+
   .imgpakketilbud{
     width: 500px;
     height:inherit;
@@ -287,7 +310,7 @@ footer{
   /*GALLERI*/
   .row{
     display: flex;
-    flex-wrap; wrap;
+    flex-wrap: wrap;
     padding: 0;
   }
 
@@ -306,6 +329,68 @@ footer{
   }
 
   /*navbar*/
+  header{
+  background: #EEEE;
+  width:100%;
+  margin: 0 auto;
+  font-size:18pt;
+  }
+
+  #logo{
+    float: left;
+    position: absolute;
+    margin-left: 20px;
+  }
+
+  .nav{
+    height: 80px;
+  }
+
+  .nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-left: 80px;
+    text-decoration: none;
+
+  }
+  .menu{
+    display: block;
+  }
+
+  .nav li{
+    display: inline-block;
+    margin-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  #logo{
+    width: 200px;
+    float: left;
+  }
+
+  .nav a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav li:hover {
+    border-bottom: solid 3px #444;
+    font-weight: bold;
+  }
+
+
+  a:visited {
+    font-weight: bold;
+  }
+
+  .nav:hover{
+    color: #000;
+  }
+
   header{
   background: #EEEE;
   width:100%;
@@ -371,11 +456,12 @@ footer{
     line-height: 70px;
     display: none;
     width: 26px;
-    float: right;
+    float: left;
   }
 
-  #toogle{
+  #toggle{
     display: none;
   }
+
 
 }
