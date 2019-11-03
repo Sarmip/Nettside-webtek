@@ -7,31 +7,14 @@
   margin: auto;
 }
 
-
 .mySlides {
   display: none; /* gjemmer bildene til defualt */
   animation-name: fade;
   animation-duration: 2s;
 }
 
-/* teksten til bilde */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: left;
-}
 
-
-/*@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}*/
-
-@keyframes fade {
+@keyframes fade { /*bildene skal ha en fading overgang*/
   from {opacity: .4}
   to {opacity: 1}
 }
