@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet">
         <!--<link rel="stylesheet" href="css/style.css">-->
         <link rel="stylesheet" href="css/test.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
       <div class="bestill_body">
@@ -13,7 +14,7 @@
             <h1>Bestilling</h1>
             <p>Usikker på hvilke pakketilbud du skal velge? Les mer om dem <a href="pakketilbud.html" id="bestill_link">HER.</a></p>
         </div>
-        
+
         <form onsubmit="return bekreftelse()" id="bestill_skjema">
           <label for="pakketilbud" class="bestill_labels">Velg pakketilbud:</label>
             <div class="bestill_select">
@@ -33,7 +34,7 @@
 
               <div class="boks">
                 <label for="dato" class="bestill_labels">Dato:</label>
-                <input type="date" class="bestill_input" name="dato" id="dato" required> 
+                <input type="date" class="bestill_input" name="dato" id="dato" required>
               </div>
 
               <div class="boks">
@@ -42,8 +43,8 @@
               </div>
 
               <div class="boks">
-                <label for="pris" class="bestill_labels">Pris:</label> 
-                <input type="text" class="bestill_input" id="pris" name="pris" disabled> 
+                <label for="pris" class="bestill_labels">Pris:</label>
+                <input type="text" class="bestill_input" id="pris" name="pris" disabled>
               </div>
 
               <div class="boks">
@@ -67,10 +68,10 @@
               </div>
 
               <input type="submit" class="bestill" id="bestill_knapp" value="Bekreft bestilling">
-              <div id="bekreftelse" class="bekrefttekst"> 
+              <div id="bekreftelse" class="bekrefttekst">
                   <h3>Takk for din bestilling!</h3>
                   <p>Du vil snart få en mail <span id="brukermail">fra oss</span>. <p>Ha en fin dag videre!</p></p>
-    
+
               </div>
           </div>
         </form>
